@@ -13,12 +13,5 @@ public class ShoppingList {
         System.out.println("Seaweed");
         System.out.println("Crackers");
 
-
-
-
-
-
-
-
     }
 }
