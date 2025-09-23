@@ -26,8 +26,11 @@ public class MathClassExamples {
         // PI
         double pie = Math.PI;
         System.out.println(pie);
-        //
+        // SIN
         double sin = Math.sin(a);
         System.out.println(sin);
+        // cosign
+        double cosign = Math.cos(b);
+        System.out.println(cosign);
     }
 }
