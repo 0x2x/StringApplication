@@ -19,7 +19,8 @@ public class MathClassExamples {
 
         // be specific
         // Math.random generates
-        int number = (int) Math.round(Math.random()  * 100); // randomize numbers from 0 - 100;
+        // Math.random orignally goes from 0 to 1
+        int number = (int) Math.round(Math.random() * 100); // randomize numbers from 0 - 100;
         // (int) casts
         System.out.println(number);
 
