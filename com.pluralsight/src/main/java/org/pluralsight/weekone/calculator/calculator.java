@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class calculator
 {
     static void main() {
-
         Scanner scan = new Scanner(System.in);
         while(true) {
             System.out.print("Choose a number: ");
@@ -19,17 +18,21 @@ public class calculator
             String Option = scan.next();
 
             switch (Option.toLowerCase().strip()) {
-                case "addition":
+                case "addition", "add", "+":
                     float result = NumberOne + NumberTwo;
-                    System.out.printf("The string will be %f", result);
+                    System.out.printf("The answer will be %f\n", result);
                     break;
-                case "subtraction":
+                case "subtraction", "subtract", "-":
                     float resultSubtract = NumberOne - NumberTwo;
-                    System.out.printf("The string will be %f", resultSubtract);
+                    System.out.printf("The answer will be %f\n", resultSubtract);
                     break;
                 case "times":
+                    float resultTimes = NumberOne * NumberTwo;
+                    System.out.printf("The answer will be %f\n", resultTimes);
                     break;
                 case "division":
+                    float resultDivsion = NumberOne / NumberTwo;
+                    System.out.printf("The answer will be %f\n", resultDivsion);
                     break;
                 default:
                     System.out.println("Not a valid format.");
