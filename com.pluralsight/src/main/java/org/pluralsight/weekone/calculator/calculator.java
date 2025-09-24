@@ -6,7 +6,7 @@ public class calculator
 {
     static void main() {
         Scanner scan = new Scanner(System.in);
-        while(true) {
+        do {
             System.out.print("Choose a number: ");
             float NumberOne = scan.nextFloat();
 
@@ -14,31 +14,30 @@ public class calculator
             float NumberTwo = scan.nextFloat();
 
             System.out.println("Choose an option: ");
-            System.out.println("Addition, Subtraction, Times, Division");
+            System.out.println("Addition [+], Subtraction [-], Times [*], Division [/]");
             String Option = scan.next();
 
             switch (Option.toLowerCase().strip()) {
                 case "addition", "add", "+":
                     float result = NumberOne + NumberTwo;
-                    System.out.printf("The answer will be %f\n", result);
+                    System.out.printf("The answer will be %f.2\n", result);
                     break;
                 case "subtraction", "subtract", "-":
                     float resultSubtract = NumberOne - NumberTwo;
-                    System.out.printf("The answer will be %f\n", resultSubtract);
+                    System.out.printf("The answer will be %f.2f\n", resultSubtract);
                     break;
-                case "times":
+                case "times", "*", "multiply":
                     float resultTimes = NumberOne * NumberTwo;
-                    System.out.printf("The answer will be %f\n", resultTimes);
+                    System.out.printf("The answer will be %f.2f\n", resultTimes);
                     break;
-                case "division":
+                case "division", "/", "divide":
                     float resultDivsion = NumberOne / NumberTwo;
-                    System.out.printf("The answer will be %f\n", resultDivsion);
+                    System.out.printf("The answer will be %f.2f\n", resultDivsion);
                     break;
                 default:
                     System.out.println("Not a valid format.");
             }
-
-        }
+        } while (true);
 
 
     }
