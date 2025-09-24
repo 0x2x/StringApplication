@@ -1,4 +1,4 @@
-package org.pluralsight;
+package org.pluralsight.weekone;
 
 public class operatorExercise {
     static void main() {

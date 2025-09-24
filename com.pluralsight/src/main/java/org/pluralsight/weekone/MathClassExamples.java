@@ -1,4 +1,4 @@
-package org.pluralsight;
+package org.pluralsight.weekone;
 
 public class MathClassExamples {
     static void main() {

@@ -1,15 +1,14 @@
-package org.pluralsight;
+package org.pluralsight.weekone;
 
 public class ChallengeOne {
     static void main() {
-        // Challenge A
         /*
         Challenge A: Double Trouble
             Create an double with any value you like.
             Multiply it by 2.
             Print both the original and the doubled value.
 
-*/
+        */
         double X = 40;
         double x_Times_two = X * 2;
         System.out.println("Original: " + X);
