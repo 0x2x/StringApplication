@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class calculator
 {
     static void main() {
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in); // initialize scan
         System.out.println("Precise Calculator");
 
         do { // Keeps repeating back to the top
