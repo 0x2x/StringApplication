@@ -79,7 +79,19 @@ public class IfStatementExcerciseStarter {
         } else  {
             System.out.println("Not leap year");
         }
+        /*
+        Which number is bigger? Given two numbers a and b, print which one is bigger. 👉 Print "a is bigger" or "b is bigger".
+         */
 
+        int letterA = 50;
+        int letterB = 25;
+        if (letterA > letterB) {
+            System.out.println("Letter A is bigger");
+        } else if (letterB > letterA) {
+            System.out.println("Letter B is bigger");
+        } else if (letterB == letterA) {
+            System.out.println("Sadly, no one is bigger.");
+        }
         /*
         Pass or fail Given a score, check if it is at least 50. 👉 Print "Pass" or "Fail".
          */
