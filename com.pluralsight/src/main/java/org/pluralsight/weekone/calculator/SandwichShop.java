@@ -1,6 +1,7 @@
 package org.pluralsight.weekone.calculator;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -59,18 +60,11 @@ public class SandwichShop {
         double discount = 0;
         double price;
 
-        List<String> NoOption = new ArrayList<>();
-        NoOption.add("nope");
-        NoOption.add("n");
-        NoOption.add("0");
-        NoOption.add("no");
+        List<String> YesList = Arrays.asList("yes", "y", "1", "ye");
+        List<String> NoList = Arrays.asList("nope", "n", "0", "no");
 
-        List<String> YesOption = new ArrayList<>();
-        YesOption.add("yes");
-        YesOption.add("y");
-        YesOption.add("1");
-        YesOption.add("ye");
-
+        ArrayList<String> YesOption = new ArrayList<>(YesList);
+        ArrayList<String> NoOption = new ArrayList<>(NoList);
 
         String prettySpecialMenu = """
                 (1) Sandwich Large - $8.95
@@ -81,8 +75,6 @@ public class SandwichShop {
         System.out.println(prettySpecialMenu); // print menu out
         System.out.print("What do you want: ");
         Choice = scan.nextInt(); // look for option that must be a integer
-
-
 
         if (Choice >= 3 || Choice <= 0) { // if they choose something over
             System.out.println("That is not on the menu.");
@@ -95,15 +87,16 @@ public class SandwichShop {
                 price = SandWich_Regular;
             }
 
-
             String WantLoadedmenu = """
                 [additional] Do you want the Sandwich loaded:
                      Regular - +1.00
                      Large - +1.75
                 """;
+
             System.out.println(WantLoadedmenu);
             System.out.print("[yes/no]: ");
             String LoadedOption = scan.next();
+
             if(YesOption.contains(LoadedOption.strip().toLowerCase())) { // if yes
                 if (Choice == 1) {
                     price = price + 1.75;
@@ -141,7 +134,5 @@ public class SandwichShop {
         } else {
             System.out.println("That's not a option");
         }
-
-
     }
 }
