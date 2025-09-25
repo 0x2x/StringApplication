@@ -123,6 +123,7 @@ public class SandwichShop {
         }
 
     }
+
     static void main() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Do you want to run excerise 1 or 2: ");

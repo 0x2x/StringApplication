@@ -24,6 +24,7 @@ public class PayrollCalculator {
             System.out.printf("%s gross-pay with out 1.5 increase is %f\n", UserName, GrossPay);
         } else {
             float GrossPay = PayRate * HoursWorked;
+
             System.out.printf("%s gross-pay is %s\n", UserName, GrossPay);
 
         }
