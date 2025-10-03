@@ -14,6 +14,14 @@ public class MyApplication {
         Name = scan.nextLine();
 
         CanVote(scan);
+        SameName("Alice");
+        AgeandName("bob", 18);
+        SquareRoot(15);
+        SwitchStatement("Bob");
+        ternaryOperator("Lara");
+        MaxNumber(15, 2);
+        RandomNumberGenerator(15);
+        SmallestNumber(55, 10000);
 
     }
 
