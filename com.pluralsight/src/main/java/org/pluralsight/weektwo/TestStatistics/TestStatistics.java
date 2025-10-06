@@ -28,10 +28,8 @@ public class TestStatistics {
                 highestScore = TotalScores[i];
             }
         }
-
         return highestScore;
     }
-
 
     private static int LowestScore(int[] TotalScores) {
         int lowestScore = TotalScores[0];
