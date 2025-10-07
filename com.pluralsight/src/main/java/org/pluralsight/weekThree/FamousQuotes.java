@@ -19,7 +19,7 @@ public class FamousQuotes {
 
         Scanner scan = new Scanner(System.in);
 
-        while (true) {
+        do {
             System.out.println();
             System.out.printf("Choose a number between 1 and %d", Quotes.size());
             System.out.print("\nNumber: ");
@@ -39,11 +39,11 @@ public class FamousQuotes {
 
                     }
                 }
-            }catch (java.lang.NumberFormatException e) {
+            } catch (NumberFormatException e) {
                 System.out.println("You have to use numbers, can't use letters.");
             }
 
-        }
+        } while (true);
 
 
     }
