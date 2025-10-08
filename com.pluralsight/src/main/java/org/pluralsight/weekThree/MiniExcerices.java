@@ -1,6 +1,7 @@
 package org.pluralsight.weekThree;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MiniExcerices {
     static void main() {
@@ -17,6 +18,18 @@ public class MiniExcerices {
             //
 
          */
+        List<String> myFriendsOne = new ArrayList<>();
+        myFriendsOne.add("John Gotti");
+        myFriendsOne.add("Al Pacino");
+        myFriendsOne.add("pablo escobar");
+        myFriendsOne.add("Al Capone");
+        myFriendsOne.add("Nigel");
+
+        myFriendsOne.remove(2);
+        for (int i = 0; i < myFriendsOne.size(); i++) {
+            System.out.println(myFriendsOne.get(i));
+        }
+        //
         ArrayList<String> MyFriends = new ArrayList<>();
         MyFriends.add("John Gotti");
         MyFriends.add("Al Pacino");
@@ -34,6 +47,26 @@ public class MiniExcerices {
         - create a new list with 10 members
 
          */
+        List<Integer> NumbersListOne = new ArrayList<>();
+        NumbersListOne.add(1);
+        NumbersListOne.add(2);
+        NumbersListOne.add(3);
+        NumbersListOne.add(4);
+        NumbersListOne.add(5);
+        NumbersListOne.add(6);
+        NumbersListOne.add(7);
+        NumbersListOne.add(8);
+        NumbersListOne.add(9);
+        NumbersListOne.add(10);
+        int TotalOne = 0;
+        int DoubleNewValuesOne = 0;
+        for (int i = 0; i < NumbersListOne.size(); i++) {
+            TotalOne += NumbersListOne.get(i);
+            DoubleNewValuesOne += NumbersListOne.get(i) * 2;
+        }
+        System.out.println("x2 New values: " + DoubleNewValuesOne);
+        System.out.println("New values: " + TotalOne);
+        //
         ArrayList<Integer> NumbersList = new ArrayList<>();
         NumbersList.add(1);
         NumbersList.add(2);
