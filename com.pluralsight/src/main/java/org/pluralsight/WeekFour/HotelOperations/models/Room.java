@@ -7,6 +7,16 @@ public class Room {
     private  boolean isDirty;
     private  boolean isAvailable;
 
+    public boolean isSuite() {
+        return isSuite;
+    }
+
+    public void setSuite(boolean suite) {
+        isSuite = suite;
+    }
+
+    private boolean isSuite;
+
     public boolean checkIn(){
         if (!isDirty) { // if dirty is false, room is good
             isDirty = true;
@@ -67,7 +77,13 @@ public class Room {
         this.isAvailable = isAvailable;
     }
 
-    //
+    // methods
+    public double totalOutCome() {
+        if(isSuite) {
+            Price *= 2;
+        }
+        return getPrice();
+    }
     public Room() {}
     public Room(int NumberOfBeds, double Price, boolean isOccupied, boolean isDirty, boolean isAvailable) {
         this.NumberOfBeds = NumberOfBeds;
