@@ -17,7 +17,7 @@ public class Cat {
         this.breed = breed;
         this.from = from;
     }
-    //
+    // regular methods
 
     public void meow() {
         System.out.println(this.name + ": meow");
