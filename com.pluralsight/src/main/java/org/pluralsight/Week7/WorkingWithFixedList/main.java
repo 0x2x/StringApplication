@@ -13,7 +13,7 @@ public class main {
 
         System.out.println(numbers.getItems().size());
 
-        FixedList<LocalDate> dates = new FixedList<>(2);
+        FixedList<LocalDate> dates = new FixedList<>(2, new ArrayList<>());
         dates.add(LocalDate.now());
         dates.add(LocalDate.now());
 //        dates.add(15); // this line should fail
