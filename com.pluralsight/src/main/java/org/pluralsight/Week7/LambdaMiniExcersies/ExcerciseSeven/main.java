@@ -1,4 +1,4 @@
-package org.pluralsight.Week7.LambdaMiniExcersies.ExcerciseSix;
+package org.pluralsight.Week7.LambdaMiniExcersies.ExcerciseSeven;
 
 public class main{
     static void main() {

@@ -1,5 +1,5 @@
 package org.pluralsight.Week7.LambdaMiniExcersies.ExcericseSix;
 @FunctionalInterface
-public interface noParams {
+public interface RandomPrinter {
     void printRandom();
 }
