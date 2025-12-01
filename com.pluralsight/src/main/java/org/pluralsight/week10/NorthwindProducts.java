@@ -18,7 +18,13 @@ public class NorthwindProducts {
             ResultSet resultSet = statement.executeQuery(query);
             //
             while(resultSet.next()) {
-                System.out.println(resultSet.getString("ProductName"));
+                System.out.println("Product Id: " + resultSet.getString("ProductId"));
+                System.out.println("Name: " + resultSet.getString("ProductName"));
+                System.out.println("Price: " + resultSet.getString("UnitPrice"));
+
+                System.out.println("Stock: " + resultSet.getString("UnitsInStock"));
+
+                System.out.println("--------");
             }
         }catch (SQLException e) {
             throw new RuntimeException(e);
